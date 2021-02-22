@@ -1,5 +1,7 @@
 call plug#begin('~/.vim/plugged')
 
+Plug 'vim-airline/vim-airline'
+
 Plug 'hugolgst/vimsence'
 
 Plug 'vim-syntastic/syntastic'
