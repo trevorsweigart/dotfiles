@@ -12,6 +12,8 @@ Plug 'preservim/nerdtree'
 
 Plug 'rstacruz/vim-closer'
 
+Plug 'preservim/nerdcommenter'
+
 call plug#end()
 
 " General config "
