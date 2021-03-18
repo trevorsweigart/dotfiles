@@ -6,6 +6,8 @@ Plug 'hugolgst/vimsence'
 
 Plug 'vim-syntastic/syntastic'
 
+Plug 'dense-analysis/ale'
+
 Plug 'ervandew/supertab'
 
 Plug 'preservim/nerdtree'
