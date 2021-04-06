@@ -64,14 +64,14 @@ let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclu
 noremap <silent> <expr> j (v:count == 0 ? 'gj' : 'j')
 noremap <silent> <expr> k (v:count == 0 ? 'gk' : 'k')
 
-set relativenumber
-
 set smarttab
 set cindent
 set tabstop=2
 set shiftwidth=2
+set number
+set spell
 " always uses spaces instead of tab characters
-set expandtab
+"set expandtab"
 
 colorscheme gruvbox
 
