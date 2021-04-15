@@ -4,7 +4,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'vim-airline/vim-airline'
 Plug 'hugolgst/vimsence'
-Plug 'rstacruz/vim-closer'
+"Plug 'rstacruz/vim-closer'
 Plug 'preservim/nerdtree'
 "Plug 'tsony-tsonev/nerdtree-git-plugin'
 Plug 'Xuyuanp/nerdtree-git-plugin'
