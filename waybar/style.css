@@ -1,0 +1,150 @@
+/* =============================================================================
+ *
+ * Waybar configuration
+ *
+ * Configuration reference: https://github.com/Alexays/Waybar/wiki/Configuration
+ *
+ * =========================================================================== */
+ 
+/* -----------------------------------------------------------------------------
+ * Keyframes
+ * -------------------------------------------------------------------------- */
+
+
+/*
+Polar Night
+nord0  #2e3440
+nord1  #3b4252
+nord2  #434c5e
+nord3  #4c566a
+Snow Storm
+nord4  #d8dee9
+nord5  #e5e9f0
+nord6  #eceff4
+Frost
+nord7  #8fbcbb
+nord8  #88c0d0
+nord9  #81a1c1
+nord10 #5e81ac
+Aurora
+nord11 #bf616a
+nord12 #d08770
+nord13 #ebcb8b
+nord14 #a3be8c
+nord15 #b48ead
+*/
+
+* {
+    border: none;
+    border-radius: 0;
+    font-family: monospace;
+    font-size: 18px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: #3b4252;
+    color: white;
+}
+
+#workspaces {
+	background-color: #4c566a;
+	margin: 5px;
+	margin-left: 10px;
+	border-radius: 5px;
+}
+#workspaces button {
+    padding: 0 10px;
+    color: #eceff4;
+}
+
+#workspaces button.urgent {
+    background-color: #bf616a;
+    border-radius: 5px;
+}
+
+#workspaces button.active {
+    color: #2e3440;
+    background-color: #88c0d0;
+    border-radius: 5px;
+}
+
+#workspaces button:hover {
+	background-color: #5e81ac;
+	border-radius: 5px;
+}
+
+#custom-date, #clock, #battery, #pulseaudio, #network, #backlight, #idle_inhibitor {
+	background-color: #4c566a;
+	padding: 0px 10px;
+	margin: 5px 0px;
+}
+
+#custom-date {
+	color: #8fbcbb;
+}
+
+#custom-power {
+	color: #2e3440;
+	background-color: #bf616a;
+	border-radius: 5px;
+	margin-right: 10px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: 10px;
+	padding: 0px 10px;
+}
+
+#clock {
+    color: #b48ead;
+    border-radius: 0px 5px 5px 0px;
+    margin-right: 10px;
+}
+
+#battery {
+    color: #a3be8c;
+}
+
+@keyframes blink {
+    to {
+        background-color: #ffffff;
+        color: black;
+    }
+}
+
+#battery.charging {
+    color: #a3be8c;
+}
+
+#battery.critical:not(.charging) {
+    background-color: #f53c3c;
+    color: #ffffff;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#network {
+	color: #d08770;
+}
+
+#pulseaudio {
+	color: #ebcb8b;
+	border-radius: 0px 0px 0px 0px;
+}
+
+#idle_inhibitor {
+  border-radius: 5px 0px 0px 5px;
+}
+
+#tray {
+	background-color: #4c566a;
+	border-radius: 5px;
+	margin-right: 10px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: 0px;
+	padding: 0px 10px;
+}
