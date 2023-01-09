@@ -1,0 +1,4 @@
+#!/bin/bash
+
+icon=""
+printf "$(date '+%a %e %b %I:%M %p')^d^"

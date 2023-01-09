@@ -1,0 +1,23 @@
+require('plugins')
+require('keymaps')
+require('options')
+-- configs
+require('configs.treesitter')
+require('configs.bufferline')
+require('configs.nvimtree')
+require('configs.lsp-installer')
+require('configs.staline')
+require('configs.sumnekoconfig')
+-- require('configs.feline')
+-- require('configs.lualine')
+require('configs.comment')
+require('configs.lsp')
+require('configs.indent')
+require('configs.colorizer')
+require('configs.cmp-conf')
+-- require('configs.efm')
+require('impatient')
+
+-- require('duckytype').setup{}
+-- require("luasnip.loaders.from_vscode").lazy_load()
+-- require('configs.cmp')

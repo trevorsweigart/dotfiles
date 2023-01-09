@@ -1,0 +1,20 @@
+[global_config]
+  borderless = True
+  tab_position = hidden
+[keybindings]
+[profiles]
+  [[default]]
+    background_darkness = 0.60
+    background_type = transparent
+    cursor_color = "#aaaaaa"
+    show_titlebar = False
+    scrollbar_position = hidden
+[layouts]
+  [[default]]
+    [[[window0]]]
+      type = Window
+      parent = ""
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+[plugins]
